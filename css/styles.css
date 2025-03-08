@@ -460,3 +460,111 @@ button {
   }
 }
 /* #endregion Hero */
+/* #region Features */
+.features {
+  padding: 96px 0;
+}
+.features-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 72px;
+}
+.features-item {
+  max-width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.features-item-icon {
+  display: none;
+}
+.features-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+.features-text {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+@media screen and (min-width: 768px) {
+  .features {
+    padding: 96px 0;
+  }
+
+  .features-list {
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+    row-gap: 72px;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .features-item {
+    max-width: 356px;
+    width: calc((100%-48px) / 2);
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .features-item-icon {
+    display: none;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .features {
+    padding: 120px 0;
+  }
+
+  .features-list {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  .features-item {
+    max-width: 264px;
+    width: calc((100%-72) / 4);
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .features-item-icon {
+    background: #f4f4fd;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    min-width: 264px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    margin-bottom: 8px;
+  }
+  .features-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin-bottom: 8px;
+  }
+  .features-text {
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+  }
+}
+/* #endregion Features */
